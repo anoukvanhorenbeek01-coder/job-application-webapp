@@ -1,6 +1,8 @@
 import { cvHighlights, companyProfile } from '../data/content';
 import { SectionHeading } from '../components/SectionHeading';
 
+const storyColors = ['#d9ecff', '#e7def8', '#fff0b8', '#d9f3ed', '#f8dfe4', '#e6efcf'];
+
 export function HighlightsSection() {
   return (
     <section id="experience" className="bg-white px-5 py-24 sm:px-8 lg:px-12">
@@ -13,8 +15,12 @@ export function HighlightsSection() {
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
-          {cvHighlights.map((item) => (
-            <article key={item.title} className="min-h-72 rounded-[1.5rem] bg-[#f5f5f2] p-7">
+          {cvHighlights.map((item, index) => (
+            <article
+              key={item.title}
+              style={{ backgroundColor: storyColors[index % storyColors.length] }}
+              className="min-h-72 rounded-[1.5rem] p-7"
+            >
               <p className="mb-5 min-h-10 text-sm font-medium leading-5 text-neutral-500">
                 {item.meta}
               </p>

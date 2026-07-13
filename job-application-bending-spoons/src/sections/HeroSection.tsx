@@ -8,6 +8,8 @@ const stats = [
   { value: '1', label: 'product communications goal' },
 ];
 
+const cardColors = ['#f8dfe4', '#d9ecff', '#e6efcf', '#fff0b8', '#e7def8', '#d9f3ed'];
+
 export function HeroSection() {
   const [selectedSkill, setSelectedSkill] = useState<string | null>(null);
   const [showCompanySummary, setShowCompanySummary] = useState(false);
@@ -89,20 +91,20 @@ export function HeroSection() {
         </div>
 
         <div id="values" className="mt-20 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {skills.map((skill) => (
+          {skills.map((skill, index) => (
             <button
               key={skill.keyword}
               onClick={() => setSelectedSkill(selectedSkill === skill.keyword ? null : skill.keyword)}
               aria-expanded={selectedSkill === skill.keyword}
-              className={`min-h-28 rounded-[1.25rem] p-6 text-left transition ${
-                selectedSkill === skill.keyword
-                  ? 'bg-[#050505] text-white'
-                  : 'bg-[#f5f5f2] text-[#050505] hover:bg-[#ecece7]'
-              }`}
+              style={{
+                backgroundColor: cardColors[index % cardColors.length],
+                borderColor: selectedSkill === skill.keyword ? "#050505" : "transparent",
+              }}
+              className="min-h-28 rounded-[1.25rem] border p-6 text-left text-[#050505] transition hover:brightness-[0.97]"
             >
               <span className="text-xl font-semibold leading-tight">{skill.keyword}</span>
               {selectedSkill === skill.keyword ? (
-                <span className="mt-4 block text-sm leading-6 text-neutral-300">
+                <span className="mt-4 block text-sm leading-6 text-neutral-700">
                   {skill.explanation}
                 </span>
               ) : null}

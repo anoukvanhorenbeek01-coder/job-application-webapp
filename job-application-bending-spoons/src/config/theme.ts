@@ -14,8 +14,8 @@ export const theme = {
     sans: 'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
   },
   branding: {
-    logoPath: '/bending%20spoons%20logo.png',
-    faviconPath: '/bending%20spoons%20logo.png',
+    logoPath: '/bending_spoons_logo.png',
+    faviconPath: '/bending_spoons_logo.png',
     supportText: 'Application website for Bending Spoons',
   },
 } as const;
