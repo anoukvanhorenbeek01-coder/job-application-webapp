@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "name": "Job application - Noho",
+      "path": "job-application-noho"
+    },
+    {
+      "name": "Job application template",
+      "path": "job-application-template"
+    },
+    {
+      "name": "Job application - Bending Spoons",
+      "path": "job-application-bending-spoons"
+    }
+  ],
+  "settings": {}
+}
