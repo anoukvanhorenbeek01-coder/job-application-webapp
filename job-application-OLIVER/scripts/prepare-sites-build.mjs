@@ -14,10 +14,10 @@ writeFileSync(
   join(dist, 'server', 'index.js'),
   `import { createReadStream, existsSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
-import { extname, join, normalize } from 'node:path';
+import { dirname, extname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const root = fileURLToPath(new URL('../client', import.meta.url));
+const root = join(dirname(fileURLToPath(import.meta.url)), '..', 'client');
 const port = Number(process.env.PORT || 3000);
 
 const types = {
