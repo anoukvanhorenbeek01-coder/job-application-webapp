@@ -15,7 +15,7 @@ export const theme = {
   },
   branding: {
     logoPath: '/Deliverect_Logo.png',
-    faviconPath: '/Deliverect_Logo.png',
+    faviconPath: '/deliverect_favicon.avif',
     supportText: 'Tailored Product Marketing Manager application',
   },
 } as const;
