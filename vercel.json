@@ -1,5 +1,0 @@
-{
-  "installCommand": "cd job-application-OLIVER && npm ci",
-  "buildCommand": "cd job-application-OLIVER && npm run build",
-  "outputDirectory": "job-application-OLIVER/dist/client"
-}
