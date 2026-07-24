@@ -39,7 +39,7 @@ export const skills: Skill[] = [
   {
     keyword: 'Languages',
     explanation:
-      'Dutch native, English C1, Spanish C1, and French B1 give me a strong base for international teams, local nuance, and cross-market content.',
+      'Dutch native, English C2, Spanish C2, and French B2 give me a strong base for international teams, local nuance, and cross-market content.',
   },
   {
     keyword: 'Creator mindset',

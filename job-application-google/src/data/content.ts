@@ -38,7 +38,7 @@ export const skills: Skill[] = [
   {
     keyword: 'Languages',
     explanation:
-      'Dutch native, English C1, Spanish C1, and French B1 give me a practical base for global marketing, localization sensitivity, and cross-market collaboration.',
+      'Dutch native, English C2, Spanish C2, and French B2 give me a practical base for global marketing, localization sensitivity, and cross-market collaboration.',
   },
   {
     keyword: 'AI curiosity',
